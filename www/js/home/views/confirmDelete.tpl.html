@@ -1,0 +1,19 @@
+<!-- ControllerAs: AddCtrl -->
+<div class="modal-header">
+    <button type="button" class="close" aria-label="Close" data-ng-click="$dismiss('cancel')"><span aria-hidden="true">&times;</span></button>
+    <h4 class="modal-title">Are you sure?</h4>
+</div>
+<div class="modal-body">
+
+    <p>This item will be permanently deleted, do you want to proceed?</p>
+
+</div>
+<div class="modal-footer">
+    <button type="button"
+            class="btn btn-default"
+            data-ng-click="$dismiss('cancel')">No</button>
+
+    <button type="button"
+            class="btn btn-danger"
+            data-ng-click="$close(true)">Yes</button>
+</div>

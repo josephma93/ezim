@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.github.giullian.ezim" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>ezim</name>
+    <description>
+        Easy Inventory Management. Allows to manage inventories in an easy manger with basic features.
+    </description>
+    <author email="ggonzalez02@hotmail.com" href="https://www.linkedin.com/in/giullian-mendez-gonzalez-235922100">
+        Giullian Mendez Gonzalez
+    </author>
+    <content src="index.html" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="14" />
+    <preference name="android-build-tool" value="gradle" />
+    <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1" />
+    <plugin name="cordova-plugin-media-capture" source="npm" spec="~1.2.0" />
+    <plugin name="cordova-plugin-console" source="npm" spec="~1.0.2" />
+    <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1" />
+    <plugin name="cordova-plugin-file" source="npm" spec="~4.1.1" />
+    <plugin name="cordova-plugin-file-transfer" source="npm" spec="~1.5.0" />
+    <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" />
+    <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
+    <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
+    <plugin name="phonegap-plugin-barcodescanner" spec="~6.0.8" />
+    <platform name="android">
+        <icon density="ldpi" src="res/icons/android/icon-ldpi.png" />
+        <icon density="mdpi" src="res/icons/android/icon-mdpi.png" />
+        <icon density="hdpi" src="res/icons/android/icon-hdpi.png" />
+        <icon density="xhdpi" src="res/icons/android/icon-xhdpi.png" />
+        <icon density="xxhdpi" src="res/icons/android/icon-xxhdpi.png" />
+        <icon density="xxxhdpi" src="res/icons/android/icon-xxxhdpi.png" />
+        <splash density="land-ldpi" src="res/screens/android/drawable-land-screen-ldpi.png" />
+        <splash density="land-mdpi" src="res/screens/android/drawable-land-screen-mdpi.png" />
+        <splash density="land-hdpi" src="res/screens/android/drawable-land-screen-hdpi.png" />
+        <splash density="land-xhdpi" src="res/screens/android/drawable-land-screen-xhdpi.png" />
+        <splash density="land-xxhdpi" src="res/screens/android/drawable-land-screen-xxhdpi.png" />
+        <splash density="land-xxxhdpi" src="res/screens/android/drawable-land-screen-xxxhdpi.png" />
+        <splash density="port-ldpi" src="res/screens/android/drawable-port-screen-ldpi.png" />
+        <splash density="port-mdpi" src="res/screens/android/drawable-port-screen-mdpi.png" />
+        <splash density="port-hdpi" src="res/screens/android/drawable-port-screen-hdpi.png" />
+        <splash density="port-xhdpi" src="res/screens/android/drawable-port-screen-xhdpi.png" />
+        <splash density="port-xxhdpi" src="res/screens/android/drawable-port-screen-xxhdpi.png" />
+        <splash density="port-xxxhdpi" src="res/screens/android/drawable-port-screen-xxxhdpi.png" />
+    </platform>
+    <platform name="ios">
+        <icon height="57" platform="ios" src="res/icons/ios/icon.png" width="57" />
+        <icon height="114" platform="ios" src="res/icons/ios/icon@2x.png" width="114" />
+        <icon height="40" platform="ios" src="res/icons/ios/icon-40.png" width="40" />
+        <icon height="80" platform="ios" src="res/icons/ios/icon-40@2x.png" width="80" />
+        <icon height="50" platform="ios" src="res/icons/ios/icon-50.png" width="50" />
+        <icon height="100" platform="ios" src="res/icons/ios/icon-50@2x.png" width="100" />
+        <icon height="60" platform="ios" src="res/icons/ios/icon-60.png" width="60" />
+        <icon height="120" platform="ios" src="res/icons/ios/icon-60@2x.png" width="120" />
+        <icon height="180" platform="ios" src="res/icons/ios/icon-60@3x.png" width="180" />
+        <icon height="72" platform="ios" src="res/icons/ios/icon-72.png" width="72" />
+        <icon height="144" platform="ios" src="res/icons/ios/icon-72@2x.png" width="144" />
+        <icon height="76" platform="ios" src="res/icons/ios/icon-76.png" width="76" />
+        <icon height="152" platform="ios" src="res/icons/ios/icon-76@2x.png" width="152" />
+        <icon height="29" platform="ios" src="res/icons/ios/icon-small.png" width="29" />
+        <icon height="58" platform="ios" src="res/icons/ios/icon-small@2x.png" width="58" />
+        <icon height="87" platform="ios" src="res/icons/ios/icon-small@3x.png" width="87" />
+        <splash height="1136" platform="ios" src="res/screens/ios/Default-568h@2x~iphone.png" width="640" />
+        <splash height="1334" platform="ios" src="res/screens/ios/Default-667h.png" width="750" />
+        <splash height="2208" platform="ios" src="res/screens/ios/Default-736h.png" width="1242" />
+        <splash height="1242" platform="ios" src="res/screens/ios/Default-Landscape-736h.png" width="2208" />
+        <splash height="1536" platform="ios" src="res/screens/ios/Default-Landscape@2x~ipad.png" width="2048" />
+        <splash height="768" platform="ios" src="res/screens/ios/Default-Landscape~ipad.png" width="1024" />
+        <splash height="2048" platform="ios" src="res/screens/ios/Default-Portrait@2x~ipad.png" width="1536" />
+        <splash height="1024" platform="ios" src="res/screens/ios/Default-Portrait~ipad.png" width="768" />
+        <splash height="960" platform="ios" src="res/screens/ios/Default@2x~iphone.png" width="640" />
+        <splash height="480" platform="ios" src="res/screens/ios/Default~iphone.png" width="320" />
+    </platform>
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+</widget>
