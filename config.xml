@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.github.giullian.ezim" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.github.josephma93.ezim" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>ezim</name>
     <description>
-        Easy Inventory Management. Allows to manage inventories in an easy manger with basic features.
+        Easy Inventory Management. Allows to manage inventories in an easy manner with basic features.
     </description>
-    <author email="ggonzalez02@hotmail.com" href="https://www.linkedin.com/in/giullian-mendez-gonzalez-235922100">
-        Giullian Mendez Gonzalez
+    <author email="josephma93@gmail.com" href="https://www.linkedin.com/in/josephmontero">
+        Joseph Montero Arguedas
     </author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
