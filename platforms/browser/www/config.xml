@@ -8,6 +8,7 @@
         Joseph Montero Arguedas
     </author>
     <content src="index.html" />
+    <gap:plugin name="phonegap-admob" source="npm" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

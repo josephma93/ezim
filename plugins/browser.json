@@ -37,9 +37,6 @@
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.github.josephma93.ezim"
     },
-    "cordova-admob": {
-      "PACKAGE_NAME": "com.github.josephma93.ezim"
-    },
     "phonegap-admob": {
       "PACKAGE_NAME": "com.github.josephma93.ezim"
     }

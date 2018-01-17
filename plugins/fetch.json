@@ -79,14 +79,6 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-admob": {
-    "source": {
-      "type": "registry",
-      "id": "https://github.com/appfeel/admob-google-cordova.git"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "cordova-connectivity-monitor": {
     "source": {
       "type": "registry",
