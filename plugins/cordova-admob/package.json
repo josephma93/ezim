@@ -1,0 +1,113 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "https://github.com/appfeel/admob-google-cordova.git",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "https://github.com/appfeel/admob-google-cordova.git",
+        "spec": "git+https://github.com/appfeel/admob-google-cordova.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:appfeel/admob-google-cordova.git",
+          "sshUrl": "git+ssh://git@github.com/appfeel/admob-google-cordova.git",
+          "httpsUrl": "git+https://github.com/appfeel/admob-google-cordova.git",
+          "gitUrl": "git://github.com/appfeel/admob-google-cordova.git",
+          "shortcut": "github:appfeel/admob-google-cordova",
+          "directUrl": "https://raw.githubusercontent.com/appfeel/admob-google-cordova/master/package.json"
+        }
+      },
+      "/home/ubuntu/workspace"
+    ]
+  ],
+  "_from": "git+https://github.com/appfeel/admob-google-cordova.git",
+  "_id": "cordova-admob@4.1.16",
+  "_inCache": true,
+  "_location": "/cordova-admob",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "https://github.com/appfeel/admob-google-cordova.git",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "https://github.com/appfeel/admob-google-cordova.git",
+    "spec": "git+https://github.com/appfeel/admob-google-cordova.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:appfeel/admob-google-cordova.git",
+      "sshUrl": "git+ssh://git@github.com/appfeel/admob-google-cordova.git",
+      "httpsUrl": "git+https://github.com/appfeel/admob-google-cordova.git",
+      "gitUrl": "git://github.com/appfeel/admob-google-cordova.git",
+      "shortcut": "github:appfeel/admob-google-cordova",
+      "directUrl": "https://raw.githubusercontent.com/appfeel/admob-google-cordova/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/appfeel/admob-google-cordova.git#d0c2ee406d987494fa76eb2880ba65d90f4b2fbb",
+  "_shasum": "f79c20871d17e881011dba9b1290f88c1c345c5f",
+  "_shrinkwrap": null,
+  "_spec": "https://github.com/appfeel/admob-google-cordova.git",
+  "_where": "/home/ubuntu/workspace",
+  "author": {
+    "name": "AppFeel"
+  },
+  "bugs": {
+    "url": "https://github.com/appfeel/admob-google-cordova/issues"
+  },
+  "cordova": {
+    "id": "cordova-admob",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "Google AdMob Ads plugin for Cordova, Phonegap, Ionic/Angular and Intel XDK. Monetize your app with one javascript line. Android SDK v7.5, iOS SDK v7.3.1. With support for tappx and auto-detect internet connection.",
+  "devDependencies": {},
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=4.0.0"
+    }
+  ],
+  "gitHead": "d0c2ee406d987494fa76eb2880ba65d90f4b2fbb",
+  "homepage": "https://github.com/appfeel/admob-google-cordova#readme",
+  "keywords": [
+    "ad",
+    "ads",
+    "admob",
+    "google",
+    "advertising",
+    "advertisment",
+    "publicity",
+    "earn",
+    "win",
+    "play",
+    "services",
+    "iad",
+    "flurry",
+    "monetization",
+    "money",
+    "appfeel",
+    "tappx",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "name": "cordova-admob",
+  "optionalDependencies": {},
+  "readme": "*<p style=\"font-size: small;\" align=\"right\"><a color=\"#232323;\" href>Made in Barcelona with <span color=\"#FCB\">Love</span> and <span color=\"#BBCCFF\">Code</span></a></p>*\n\nCordova AdMob plugin\n====================\n\nMonetize your Cordova/Phonegap/XDK apps with AdMob ads, **using latest Google AdMob SDK**.\nWith this Cordova/Phonegap/XDK plugin you can show AdMob ads as easy as:\n\n    admob.createBannerView({publisherId: \"ca-app-pub-XXXXXXXXXXXXXXXX/BBBBBBBBBB\"});\n\nOr\n\n    admob.requestInterstitialAd({publisherId: \"ca-app-pub-XXXXXXXXXXXXXXXX/BBBBBBBBBB\", interstitialAdId: \"ca-app-pub-XXXXXXXXXXXXXXXX/IIIIIIIIII\"});\n\n![Integrate cordova admob plugin](https://github.com/appfeel/admob-google-cordova/wiki/demo/integrate-admob-cordova.gif)\n\n\n---\n## Plugin update (phonega/cordova cli) ##\n\n`cordova-admob~4.1.15` and later are now updated to Firebase (ios 7.13.1 and later and managed by gradle in android)\n\nTo update the plugin you should remove the plugin ad add it again:\n\n```\n$ cordova plugin rm cordova-admob\n$ npm cache clear\n$ cordova plugin add cordova-admob\n```\n\nSometimes removing the plugin causes an error (it's been reported to cordova https://issues.apache.org/jira/browse/CB-12083). If that happens, remove first `cordova-libgoogleadmobads` manually:\n\n\n```\n$ rm plugins/cordova-libgoogleadmobads/ -rf\n$ cordova plugin rm cordova-admob\n$ npm cache clear\n$ cordova plugin add cordova-admob\n```\n\n---\n## Testimonials ##\n\n* [Visual Scale Android](https://play.google.com/store/apps/details?id=com.appfeel.visualanalogscale), [Visual Scale iOS](https://itunes.apple.com/app/id940214847?mt=8), a free app to help doctors and physiotherapists in their daily work:\n\n> It was really easy to integrate, thanks.\n\n* [Military Quotes Android](https://play.google.com/store/apps/details?id=com.covernator.fb.military.quotes), an interesting free app for those interested in images and quotes from US Military.\n\n> It works like a charm. Test ads and real ads show up. Thanks so much for following up, awesome support.\n\n<br><br>\n**[Place your testimonial here](https://github.com/appfeel/admob-google-cordova/issues)**\n\n\n---\n## Platform SDK supported ##\n\n* iOS, using AdMob SDK for iOS, v7.13.1\n* Android, using latest Google Play Service for Android (managed by gradle)\n\n\n---\n## Demo projects: ##\n- [Intel XDK](https://github.com/appfeel/admob-google-xdk)\n- [Cordova/PhoneGap CLI](https://github.com/appfeel/admob-google-demo)\n- [PhoneGap Build](https://github.com/appfeel/admob-phonegap-build-demo)\n\n---\n## Quick start ##\n\nTo install this plugin, follow the [Command-line Interface Guide](http://cordova.apache.org/docs/en/edge/guide_cli_index.md.html#The%20Command-line%20Interface). You can use one of the following command lines:\n\n* `cordova plugin add cordova-admob`\n* `cordova plugin add https://github.com/appfeel/admob-google-cordova.git`\n\n\nTo use in [Phonegap Build](https://build.phonegap.com), place the following tag in your `config.xml` file:\n\n```xml\n<gap:plugin name=\"phonegap-admob\" source=\"npm\"/>\n```\n\nTo start showing ads, place the following code in your `onDeviceReady` callback. Replace corresponding id's with yours:\n\n*Note: ensure you have a proper [AdMob](https://apps.admob.com/admob/signup) and [tappx](http://www.tappx.com/?h=dec334d63287772de859bdb4e977fce6) accounts and get your publisher id's*.\n\n```javascript\n    \n    function onDeviceReady() {\n      document.removeEventListener('deviceready', onDeviceReady, false);\n      \n      // Set AdMobAds options:\n      admob.setOptions({\n        publisherId:          \"ca-app-pub-XXXXXXXXXXXXXXXX/BBBBBBBBBB\",  // Required\n        interstitialAdId:     \"ca-app-pub-XXXXXXXXXXXXXXXX/IIIIIIIIII\",  // Optional\n        tappxIdiOS:           \"/XXXXXXXXX/Pub-XXXX-iOS-IIII\",            // Optional\n        tappxIdAndroid:       \"/XXXXXXXXX/Pub-XXXX-Android-AAAA\",        // Optional\n        tappxShare:           0.5                                        // Optional\n      });\n      \n      // Start showing banners (atomatic when autoShowBanner is set to true)\n      admob.createBannerView();\n      \n      // Request interstitial (will present automatically when autoShowInterstitial is set to true)\n      admob.requestInterstitialAd();\n    }\n    \n    document.addEventListener(\"deviceready\", onDeviceReady, false);\n```\n\n\n\n\nIf you don't specify tappxId, no tappx requests will be placed (even if you specify a tappxShare). [See Tappx configuration](https://github.com/appfeel/admob-google-cordova/wiki/Tappx-configuration) for more detailed info.\n\n:warning: Be sure to only fire on \"deviceready\" otherwise, the plugin would not work.\n\n---\n## Full documentation ##\n\nVisit the [wiki](https://github.com/appfeel/admob-google-cordova/wiki) of Google AdMob Cordova plugin. Table of contents:\n\n* [Home](https://github.com/appfeel/admob-google-cordova/wiki)\n* [Table of contents](https://github.com/appfeel/admob-google-cordova/wiki/Table-of-contents)\n* [Change Log](https://github.com/appfeel/admob-google-cordova/wiki/Change-Log)\n* [Testimonials](https://github.com/appfeel/admob-google-cordova/wiki/Testimonials)\n* [Setup](https://github.com/appfeel/admob-google-cordova/wiki/Setup)\n* [Angular.js, Ionic apps](https://github.com/appfeel/admob-google-cordova/wiki/Angular.js,-Ionic-apps)\n* [Tappx configuration](https://github.com/appfeel/admob-google-cordova/wiki/Tappx-configuration)\n* [Javascript API](https://github.com/appfeel/admob-google-cordova/wiki/Javascript-API)\n  * [setOptions](https://github.com/appfeel/admob-google-cordova/wiki/setOptions)\n  * Banners\n    * [createBannerView](https://github.com/appfeel/admob-google-cordova/wiki/createBannerView)\n    * [showBannerAd](https://github.com/appfeel/admob-google-cordova/wiki/showBannerAd)\n    * [destroyBannerView](https://github.com/appfeel/admob-google-cordova/wiki/destroyBannerView)\n  * Interstitials\n    * [requestInterstitialAd](https://github.com/appfeel/admob-google-cordova/wiki/requestInterstitialAd)\n    * [showInterstitialAd](https://github.com/appfeel/admob-google-cordova/wiki/showInterstitialAd)\n  * In app purchase\n    * [recordResolution](https://github.com/appfeel/admob-google-cordova/wiki/recordResolution)\n    * [recordPlayBillingResolution](https://github.com/appfeel/admob-google-cordova/wiki/recordPlayBillingResolution)\n  * [Events](https://github.com/appfeel/admob-google-cordova/wiki/Events)\n    * [onAdLoaded](https://github.com/appfeel/admob-google-cordova/wiki/Events#admobeventsonadloaded)\n    * [onAdFailedToLoad](https://github.com/appfeel/admob-google-cordova/wiki/Events#admobeventsonadfailedtoload)\n    * [onAdOpened](https://github.com/appfeel/admob-google-cordova/wiki/Events#admobeventsonadopened)\n    * [onAdClosed](https://github.com/appfeel/admob-google-cordova/wiki/Events#admobeventsonadclosed)\n    * [onAdLeftApplication](https://github.com/appfeel/admob-google-cordova/wiki/Events#admobeventsonadleftapplication)\n    * [onInAppPurchaseRequested](https://github.com/appfeel/admob-google-cordova/wiki/Events#admobeventsoninapppurchaserequested)\n* [Complete example code](https://github.com/appfeel/admob-google-cordova/wiki/Complete-example-code)\n* [Contributing](https://github.com/appfeel/admob-google-cordova/wiki/Contributing)\n* [Screenshots](https://github.com/appfeel/admob-google-cordova/wiki/Screenshots)\n\n---\n## Complete example code ##\nNote that the admob ads are configured inside `onDeviceReady()`. This is because only after device ready the AdMob Cordova plugin will be working.\n\n```javascript\n\n    var isAppForeground = true;\n    \n    function initAds() {\n      if (admob) {\n        var adPublisherIds = {\n          ios : {\n            banner : \"ca-app-pub-XXXXXXXXXXXXXXXX/BBBBBBBBBB\",\n            interstitial : \"ca-app-pub-XXXXXXXXXXXXXXXX/IIIIIIIIII\"\n          },\n          android : {\n            banner : \"ca-app-pub-XXXXXXXXXXXXXXXX/BBBBBBBBBB\",\n            interstitial : \"ca-app-pub-XXXXXXXXXXXXXXXX/IIIIIIIIII\"\n          }\n        };\n    \t  \n        var admobid = (/(android)/i.test(navigator.userAgent)) ? adPublisherIds.android : adPublisherIds.ios;\n            \n        admob.setOptions({\n          publisherId:      admobid.banner,\n          interstitialAdId: admobid.interstitial,\n          tappxIdiOS:       \"/XXXXXXXXX/Pub-XXXX-iOS-IIII\",\n          tappxIdAndroid:   \"/XXXXXXXXX/Pub-XXXX-Android-AAAA\",\n          tappxShare:       0.5,\n          \n        });\n\n        registerAdEvents();\n        \n      } else {\n        alert('AdMobAds plugin not ready');\n      }\n    }\n    \n    function onAdLoaded(e) {\n      if (isAppForeground) {\n        if (e.adType === admob.AD_TYPE.INTERSTITIAL) {\n          console.log(\"An interstitial has been loaded and autoshown. If you want to load the interstitial first and show it later, set 'autoShowInterstitial: false' in admob.setOptions() and call 'admob.showInterstitialAd();' here\");\n        } else if (e.adType === admob.AD_TYPE_BANNER) {\n          console.log(\"New banner received\");\n        }\n      }\n    }\n    \n    function onPause() {\n      if (isAppForeground) {\n        admob.destroyBannerView();\n        isAppForeground = false;\n      }\n    }\n    \n    function onResume() {\n      if (!isAppForeground) {\n        setTimeout(admob.createBannerView, 1);\n        setTimeout(admob.requestInterstitialAd, 1);\n        isAppForeground = true;\n      }\n    }\n    \n    // optional, in case respond to events\n    function registerAdEvents() {\n      document.addEventListener(admob.events.onAdLoaded, onAdLoaded);\n      document.addEventListener(admob.events.onAdFailedToLoad, function (e) {});\n      document.addEventListener(admob.events.onAdOpened, function (e) {});\n      document.addEventListener(admob.events.onAdClosed, function (e) {});\n      document.addEventListener(admob.events.onAdLeftApplication, function (e) {});\n      document.addEventListener(admob.events.onInAppPurchaseRequested, function (e) {});\n      \n      document.addEventListener(\"pause\", onPause, false);\n      document.addEventListener(\"resume\", onResume, false);\n    }\n        \n    function onDeviceReady() {\n      document.removeEventListener('deviceready', onDeviceReady, false);\n      initAds();\n\n      // display a banner at startup\n      admob.createBannerView();\n        \n      // request an interstitial\n      admob.requestInterstitialAd();\n    }\n    \n    document.addEventListener(\"deviceready\", onDeviceReady, false);\n```\n\n---\n## Contributing ##\nYou can use this cordova plugin for free. You can contribute to this project in many ways:\n\n* Testimonials of apps that are using this plugin gives your app free marketing and will be especially helpful. [Open an issue](https://github.com/appfeel/admob-google-cordova/issues).\n* Register to [tappx](http://www.tappx.com/?h=dec334d63287772de859bdb4e977fce6) by using this link: http://www.tappx.com/?h=dec334d63287772de859bdb4e977fce6. It is our Guess-Link and for each affiliate we will get 50k tappix (free exchange ads).\n* [Reporting issues](https://github.com/appfeel/admob-google-cordova/issues).\n* Patching and bug fixing, especially when submitted with test code. [Open a pull request](https://github.com/appfeel/admob-google-cordova/pulls).\n* Other enhancements.\n\nYou can also support this project by sharing 2% Ad traffic (it's not mandatory: if you are unwilling to share, please fork and remove the donation code).\n\nLove the project? Wanna buy me a coffee (or a beer :D)? [Click here](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ELWJTK68B9A54&item_name=AppFeel+admob+for+cordova&item_number=com%2eadmob%2egoogle)\n\n---\n## Screenshots ##\n#### iPhone:\n\n<img src=\"https://github.com/appfeel/admob-google-cordova/wiki/demo/iphone.png\" border=\"10\" alt=\"Phonegp Cordova admob plugin in iPhone\" />\n\n#### iPad Banner Portrait:\n\n<img src=\"https://github.com/appfeel/admob-google-cordova/wiki/demo/banner-ipad.png\" border=\"10\" alt=\"Phonegp Cordova admob plugin in iPad\" />\n\n#### iPad Banner Landscape:\n\n<img src=\"https://raw.githubusercontent.com/wiki/appfeel/admob-google-cordova/demo/banner-landscape-ipad.png\" border=\"10\" alt=\"Phonegp Cordova banner admob plugin\" />\n\n---\n## License ##\n```\nThe MIT License\n\nCopyright (c) 2014 AppFeel\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies\nof the Software, and to permit persons to whom the Software is furnished to do\nso, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n```\n\n---\n## Credits ##\n\n* [appFeel](http://www.appfeel.com)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appfeel/admob-google-cordova.git"
+  },
+  "version": "4.1.16"
+}

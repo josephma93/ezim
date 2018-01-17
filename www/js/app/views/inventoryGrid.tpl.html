@@ -1,0 +1,133 @@
+<!-- ControllerAs: GridCtrl -->
+<div class="modal-overlay" data-ng-show="GridCtrl.transactionInProgress">
+    <img src="img/load_spinner.png"></img>
+</div>
+<div class="modal-header">
+    <button type="button" class="close" aria-label="Close" data-ng-click="$dismiss('cancel')"><span aria-hidden="true">&times;</span></button>
+    <h4 class="modal-title">Register item</h4>
+</div>
+<div class="modal-body">
+
+    <div data-ng-repeat="alert in GridCtrl.alerts"
+                     data-ng-class="'alert-' + alert.type"
+                     data-uib-alert=""
+                     data-dismiss-on-timeout="3000"
+                     data-close="GridCtrl.alerts.splice($index, 1)">{{alert.msg}}</div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-8 xs-m-bottom">
+            <button type="button"
+                    class="btn btn-warning btn-sm"
+                    data-ng-click="GridCtrl.addMerchandise()"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> New</button>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 xs-m-bottom">
+            <div class="input-group input-group-sm">
+                <input type="text"
+                       class="form-control"
+                       placeholder="Search ..."
+                       aria-label="Search ..."
+                       data-ng-model="GridCtrl.searchCriteria">
+                <span class="input-group-btn">
+                    <button type="button"
+                            class="btn btn-default"
+                            data-ng-click="GridCtrl.onSearchCriteriaChange()"><i class="glyphicon glyphicon-search" aria-hidden="true"></i><span class="sr-only">Search</span></button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-condensed">
+            <thead>
+                <th scope="col">Barcode</th>
+                <th scope="col">
+                    <span data-ng-click="GridCtrl.changeSortCriteria('name')" role="button">
+                        Name
+                        <i class="glyphicon" data-ng-class="{
+                            'glyphicon-triangle-top': GridCtrl.sortExpression === '+name',
+                            'glyphicon-triangle-bottom': GridCtrl.sortExpression === '-name'
+                        }"></i>
+                    </span>
+                </th>
+                <th scope="col">
+                    <span data-ng-click="GridCtrl.changeSortCriteria('cost')" role="button">
+                        Cost
+                        <i class="glyphicon" data-ng-class="{
+                            'glyphicon-triangle-top': GridCtrl.sortExpression === '+cost',
+                            'glyphicon-triangle-bottom': GridCtrl.sortExpression === '-cost'
+                        }"></i>
+                    </span>
+                </th>
+                <th scope="col">
+                    <span data-ng-click="GridCtrl.changeSortCriteria('quantity')" role="button">
+                        Quantity
+                        <i class="glyphicon" data-ng-class="{
+                            'glyphicon-triangle-top': GridCtrl.sortExpression === '+quantity',
+                            'glyphicon-triangle-bottom': GridCtrl.sortExpression === '-quantity'
+                        }"></i>
+                    </span>
+                </th>
+                <th scope="col">Actions</th>
+            </thead>
+            <tbody>
+                <tr data-ng-repeat="merchandise in GridCtrl.inventory track by $index">
+                    <td data-ng-bind="merchandise.code"></td>
+                    <td data-ng-bind="merchandise.name"></td>
+                    <td data-ng-bind="merchandise.cost"></td>
+                    <td data-ng-bind="merchandise.quantity"></td>
+                    <td>
+                        <button type="button"
+                                class="btn btn-info btn-xs glyphicon glyphicon-pencil"
+                                data-ng-click="GridCtrl.editMerchandise(merchandise)"><span class="sr-only">Edit</span></button>
+                        <button type="button"
+                                class="btn btn-danger btn-xs glyphicon glyphicon-trash"
+                                data-ng-click="GridCtrl.deleteMerchandise(merchandise, $index)"><span class="sr-only">Delete</span></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="row">
+
+        <div class="col-xs-12 col-md-4">
+            <label for="sltCantItemsPerPage">Records per page</label>
+            <select id="sltCantItemsPerPage"
+                    name="sltCantItemsPerPage"
+                    class="form-control input-inline"
+                    data-ng-model="GridCtrl.itemsPerPage"
+                    data-ng-change="GridCtrl.onItemsPerPageChange()"
+                    data-ng-options="option for option in GridCtrl.itemsPerPageOpts">
+            </select>
+        </div>
+
+        <div class="col-xs-12 col-md-4 text-center">
+            <p><pagination-info data-items-per-page="GridCtrl.itemsPerPage"
+                                data-total-items="GridCtrl.pagination.totalItems"
+                                data-current-page="GridCtrl.pagination.currentPage"></pagination-info></p>
+        </div>
+
+        <div class="col-xs-12 col-md-4 pagination-wrapper">
+            <nav aria-label="Search results pages">
+                <ul class="pagination-sm"
+                    data-ng-model="GridCtrl.pagination.currentPage"
+                    data-ng-change="GridCtrl.onPageNumberChange()"
+                    data-uib-pagination=""
+                    data-items-per-page="GridCtrl.itemsPerPage"
+                    data-total-items="GridCtrl.pagination.totalItems"
+                    data-max-size="GridCtrl.pagination.maxSize"
+                    data-boundary-link-numbers="true"
+                    data-rotate="false"></ul>
+            </nav>
+        </div>
+
+    </div>
+
+</div>
+<div class="modal-footer">
+    <button type="button"
+            class="btn btn-default"
+            data-dismiss="modal"
+            data-ng-click="$dismiss('cancel')">Close</button>
+</div>

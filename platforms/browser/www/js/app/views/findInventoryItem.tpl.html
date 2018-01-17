@@ -1,0 +1,58 @@
+<!-- ControllerAs: FindCtrl -->
+<div class="modal-overlay" data-ng-show="FindCtrl.transactionInProgress">
+    <img src="img/load_spinner.png"></img>
+</div>
+<div class="modal-header">
+    <button type="button" class="close" aria-label="Close" data-ng-click="$dismiss('cancel')"><span aria-hidden="true">&times;</span></button>
+    <h4 class="modal-title">Scan item</h4>
+</div>
+<div class="modal-body">
+    <div class="row">
+        
+        <div class="col-xs-12">
+            <div data-ng-repeat="alert in FindCtrl.alerts"
+                 data-ng-class="'alert-' + alert.type"
+                 data-uib-alert=""
+                 data-dismiss-on-timeout="3000"
+                 data-close="FindCtrl.alerts.splice($index, 1)">{{alert.msg}}</div>
+        </div>
+        
+        <div class="col-xs-4">
+            <p>Barcode:</p>
+        </div>
+        <div class="col-xs-8">
+            <p data-ng-bind="FindCtrl.itemFound.code"></p>
+        </div>
+        <div class="col-xs-4">
+            <p>Name:</p>
+        </div>
+        <div class="col-xs-8">
+            <p data-ng-bind="FindCtrl.itemFound.name"></p>
+        </div>
+        <div class="col-xs-4">
+            <p>Cost:</p>
+        </div>
+        <div class="col-xs-8">
+            <p data-ng-bind="FindCtrl.itemFound.cost"></p>
+        </div>
+        <div class="col-xs-4">
+            <p>Quantity:</p>
+        </div>
+        <div class="col-xs-8">
+            <p data-ng-bind="FindCtrl.itemFound.quantity"></p>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button"
+            class="btn btn-default"
+            data-dismiss="modal"
+            data-ng-click="$dismiss('cancel')">Close</button>
+    <button type="button"
+            class="btn btn-info"
+            data-ng-click="FindCtrl.scanItemAgain()">Scan again</button>
+    <button type="button"
+            class="btn btn-success"
+            data-ng-click="FindCtrl.registerSale()"
+            data-ng-disabled="FindCtrl.hasntValidItem() || FindCtrl.cantRegisterSale()">Register sale</button>
+</div>

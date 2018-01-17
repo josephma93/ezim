@@ -1,0 +1,52 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.github.josephma93.ezim"
+    },
+    "phonegap-plugin-barcodescanner": {
+      "PACKAGE_NAME": "com.github.josephma93.ezim"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.github.josephma93.ezim"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "com.github.josephma93.ezim"
+    },
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.github.josephma93.ezim"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.github.josephma93.ezim"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.github.josephma93.ezim"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.github.josephma93.ezim"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.github.josephma93.ezim"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.github.josephma93.ezim"
+    },
+    "cordova-admob": {
+      "PACKAGE_NAME": "com.github.josephma93.ezim"
+    },
+    "phonegap-admob": {
+      "PACKAGE_NAME": "com.github.josephma93.ezim"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-connectivity-monitor": {
+      "PACKAGE_NAME": "com.github.josephma93.ezim"
+    }
+  }
+}

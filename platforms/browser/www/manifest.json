@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "ezim",
+  "short_name": "ezim",
+  "version": "com.github.josephma93.ezim",
+  "description": "Easy Inventory Management. Allows to manage inventories in an easy manner with basic features.",
+  "author": "Joseph Montero Arguedas",
+  "icons": [],
+  "start_url": "index.html"
+}

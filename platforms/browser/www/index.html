@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html id="ezim">
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *; connect-src *" />-->
+
+    <link rel="stylesheet" href="vendor/bootstrap.3.3.7/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Easy Inventory Management</title>
+</head>
+
+<body>
+    <ng-view>
+        <div id="waitingScreen">
+            <img src="img/load_spinner.png">
+            <span>Wait for App to load...</span>
+        </div>
+    </ng-view>
+    
+    <script src="cordova.js"></script>
+    <script src="vendor/angular.1.6.6/angular.min.js"></script>
+    <script src="vendor/angular.1.6.6/angular-animate.min.js"></script>
+    <script src="vendor/angular.1.6.6/angular-sanitize.min.js"></script>
+    <script src="vendor/angular.1.6.6/angular-route.min.js"></script>
+    <script src="vendor/ui-bootstrap.2.5.0/ui-bootstrap-tpls.min.js"></script>
+
+    <script src="js/cordovaWrapper/cordovaModule.js"></script>
+    <script src="js/cordovaWrapper/services/barcodeScanner.js"></script>
+    <script src="js/cordovaWrapper/services/file.js"></script>
+    <script src="js/ezim.js"></script>
+    <script src="js/app/homeModule.js"></script>
+    <script src="js/app/homeController.js"></script>
+    <script src="js/app/component/paginationInfoComponent.js"></script>
+    <script src="js/app/factory/inventoryDatasource.js"></script>
+    <script src="js/app/controllers/findInventoryItemController.js"></script>
+    <script src="js/app/controllers/addItemToInventoryController.js"></script>
+    <script src="js/app/controllers/inventoryGridController.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-file@~4.1.1",
+        "scope": null,
+        "escapedName": "cordova-plugin-file",
+        "name": "cordova-plugin-file",
+        "rawSpec": "~4.1.1",
+        "spec": ">=4.1.1 <4.2.0",
+        "type": "range"
+      },
+      "/home/ubuntu/workspace"
+    ]
+  ],
+  "_from": "cordova-plugin-file@>=4.1.1 <4.2.0",
+  "_id": "cordova-plugin-file@4.1.1",
+  "_inCache": true,
+  "_location": "/cordova-plugin-file",
+  "_nodeVersion": "5.4.1",
+  "_npmOperationalInternal": {
+    "host": "packages-6-west.internal.npmjs.com",
+    "tmp": "tmp/cordova-plugin-file-4.1.1.tgz_1455219417027_0.3942579582799226"
+  },
+  "_npmUser": {
+    "name": "stevegill",
+    "email": "stevengill97@gmail.com"
+  },
+  "_npmVersion": "3.5.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-file@~4.1.1",
+    "scope": null,
+    "escapedName": "cordova-plugin-file",
+    "name": "cordova-plugin-file",
+    "rawSpec": "~4.1.1",
+    "spec": ">=4.1.1 <4.2.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-file/-/cordova-plugin-file-4.1.1.tgz",
+  "_shasum": "a82b6fd5757efecf00e2794c0fad647a5ff675f2",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-file@~4.1.1",
+  "_where": "/home/ubuntu/workspace",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://github.com/apache/cordova-plugin-file/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-file",
+    "platforms": [
+      "android",
+      "amazon-fireos",
+      "ubuntu",
+      "ios",
+      "osx",
+      "wp7",
+      "wp8",
+      "blackberry10",
+      "windows8",
+      "windows",
+      "firefoxos"
+    ]
+  },
+  "dependencies": {},
+  "description": "Cordova File Plugin",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "a82b6fd5757efecf00e2794c0fad647a5ff675f2",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-file/-/cordova-plugin-file-4.1.1.tgz"
+  },
+  "homepage": "https://github.com/apache/cordova-plugin-file#readme",
+  "keywords": [
+    "cordova",
+    "file",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-amazon-fireos",
+    "cordova-ubuntu",
+    "cordova-ios",
+    "cordova-osx",
+    "cordova-wp7",
+    "cordova-wp8",
+    "cordova-blackberry10",
+    "cordova-windows8",
+    "cordova-windows",
+    "cordova-firefoxos"
+  ],
+  "license": "Apache-2.0",
+  "maintainers": [
+    {
+      "name": "stevegill",
+      "email": "stevengill97@gmail.com"
+    }
+  ],
+  "name": "cordova-plugin-file",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache/cordova-plugin-file.git"
+  },
+  "scripts": {},
+  "version": "4.1.1"
+}

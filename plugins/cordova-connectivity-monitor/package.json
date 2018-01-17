@@ -1,0 +1,104 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-connectivity-monitor",
+        "scope": null,
+        "escapedName": "cordova-connectivity-monitor",
+        "name": "cordova-connectivity-monitor",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/home/ubuntu/workspace"
+    ]
+  ],
+  "_from": "cordova-connectivity-monitor@latest",
+  "_id": "cordova-connectivity-monitor@1.2.2",
+  "_inCache": true,
+  "_location": "/cordova-connectivity-monitor",
+  "_nodeVersion": "0.12.4",
+  "_npmUser": {
+    "name": "appfeel",
+    "email": "info@appfeel.com"
+  },
+  "_npmVersion": "2.10.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-connectivity-monitor",
+    "scope": null,
+    "escapedName": "cordova-connectivity-monitor",
+    "name": "cordova-connectivity-monitor",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-connectivity-monitor/-/cordova-connectivity-monitor-1.2.2.tgz",
+  "_shasum": "ae863e9606604b29482b516fd84f26687a21053d",
+  "_shrinkwrap": null,
+  "_spec": "cordova-connectivity-monitor",
+  "_where": "/home/ubuntu/workspace",
+  "author": {
+    "name": "AppFeel"
+  },
+  "bugs": {
+    "url": "https://github.com/appfeel/connectivity-monitor-cordova/issues"
+  },
+  "cordova": {
+    "id": "cordova-connectivity-monitor",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "Connectivity status monitoring. Detects if there is WIFI/3G/EDGE/CDMA available.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "ae863e9606604b29482b516fd84f26687a21053d",
+    "tarball": "https://registry.npmjs.org/cordova-connectivity-monitor/-/cordova-connectivity-monitor-1.2.2.tgz"
+  },
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=2.9"
+    }
+  ],
+  "gitHead": "2ea4d6cc3a29d0fa651e35d3695e810645a71995",
+  "homepage": "https://github.com/appfeel/connectivity-monitor-cordova#readme",
+  "keywords": [
+    "connectivity",
+    "network state",
+    "net state",
+    "net",
+    "monitoring",
+    "monitor",
+    "net status",
+    "reachability",
+    "appfeel",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "appfeel",
+      "email": "info@appfeel.com"
+    }
+  ],
+  "name": "cordova-connectivity-monitor",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appfeel/connectivity-monitor-cordova.git"
+  },
+  "scripts": {},
+  "version": "1.2.2"
+}

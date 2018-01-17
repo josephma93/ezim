@@ -1,0 +1,72 @@
+<!-- ControllerAs: AddCtrl -->
+<div class="modal-header">
+    <button type="button" class="close" aria-label="Close" data-ng-click="$dismiss('cancel')"><span aria-hidden="true">&times;</span></button>
+    <h4 class="modal-title" data-ng-show="AddCtrl.EDIT_MODE">Edit item</h4>
+    <h4 class="modal-title" data-ng-hide="AddCtrl.EDIT_MODE">Register item</h4>
+</div>
+<div class="modal-body">
+
+    <form name="frmItemRegister" class="form-horizontal" novalidate>
+        <fieldset>
+
+            <div class="col-xs-12">
+                <div data-ng-repeat="alert in AddCtrl.alerts"
+                     data-ng-class="'alert-' + alert.type"
+                     data-uib-alert=""
+                     data-dismiss-on-timeout="3000"
+                     data-close="AddCtrl.alerts.splice($index, 1)">{{alert.msg}}</div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="txtItemCode">Barcode:</label>
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <input id="txtItemCode" name="txtItemCode" type="text" placeholder="barcode" class="form-control input-md" required="" data-ng-model="AddCtrl.itemToProcess.code">
+                        <span class="input-group-addon" aria-label="Scan barcode" data-ng-click="AddCtrl.scanBarcode()"><span class="glyphicon glyphicon-barcode" aria-hidden="true"></span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="txtItemName">Name:</label>
+                <div class="col-md-4">
+                    <input id="txtItemName" name="txtItemName" type="text" placeholder="enter name" class="form-control input-md" required="" data-ng-model="AddCtrl.itemToProcess.name">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="txtItemCost">Cost</label>
+                <div class="col-md-4">
+                    <input id="txtItemCost" name="txtItemCost" type="number" placeholder="enter cost" class="form-control input-md" required="" data-ng-model="AddCtrl.itemToProcess.cost">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="txtItemQuantity">Quantity:</label>
+                <div class="col-md-4">
+                    <input id="txtItemQuantity" name="txtItemQuantity" type="number" placeholder="enter quantity" class="form-control input-md" required="" data-ng-model="AddCtrl.itemToProcess.quantity">
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+
+</div>
+<div class="modal-footer">
+    <button type="button"
+            class="btn btn-default"
+            data-dismiss="modal"
+            data-ng-click="$dismiss('cancel')">Close</button>
+
+    <button type="button"
+            class="btn btn-info"
+            data-ng-hide="AddCtrl.EDIT_MODE"
+            data-ng-disabled="frmItemRegister.$invalid"
+            data-ng-click="AddCtrl.registerItem()">Register</button>
+
+    <button type="button"
+            class="btn btn-info"
+            data-ng-show="AddCtrl.EDIT_MODE"
+            data-ng-disabled="frmItemRegister.$invalid"
+            data-ng-click="AddCtrl.updateItem()">Update</button>
+</div>
