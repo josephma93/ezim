@@ -13,24 +13,6 @@
     "phonegap-plugin-barcodescanner": {
       "PACKAGE_NAME": "com.github.josephma93.ezim"
     },
-    "cordova-plugin-camera": {
-      "PACKAGE_NAME": "com.github.josephma93.ezim"
-    },
-    "cordova-plugin-media-capture": {
-      "PACKAGE_NAME": "com.github.josephma93.ezim"
-    },
-    "cordova-plugin-console": {
-      "PACKAGE_NAME": "com.github.josephma93.ezim"
-    },
-    "cordova-plugin-device": {
-      "PACKAGE_NAME": "com.github.josephma93.ezim"
-    },
-    "cordova-plugin-file-transfer": {
-      "PACKAGE_NAME": "com.github.josephma93.ezim"
-    },
-    "cordova-plugin-network-information": {
-      "PACKAGE_NAME": "com.github.josephma93.ezim"
-    },
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.github.josephma93.ezim"
     },
