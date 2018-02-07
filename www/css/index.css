@@ -47,6 +47,13 @@ ng-view {
     margin-left: 30px;
 }
 
+#about-btn {
+    position: fixed;
+    top: 10px;
+    bottom: auto;
+    right: 10px;
+}
+
 .find-item-modal .modal-body .col-xs-4 {
   clear: left;
 }
@@ -88,4 +95,8 @@ label {
 
 [role="button"] {
     cursor: pointer;
+}
+
+.about-modal pre {
+    margin: 0;
 }

@@ -56,9 +56,18 @@ angular.module('ezim.home')
 					});
 				}
 				
+				function openAboutModal() {
+
+					$uibModal.open({
+						'templateUrl': 'js/app/views/aboutModal.tpl.html',
+						'windowClass': 'about-modal',
+					});
+				}
+				
 				this.findInventoryItem = findInventoryItem;
 				this.addItemToInventory = addItemToInventory;
 				this.addInventoryGrid = addInventoryGrid;
+				this.openAboutModal = openAboutModal;
 			}
 		]
 	)
