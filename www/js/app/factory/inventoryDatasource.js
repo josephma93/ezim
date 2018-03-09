@@ -51,7 +51,7 @@ angular.module('ezim.home')
 								result = inventory;
 							
 							if (angular.isDefined(query)) {
-								result = filterFn(inventory, query);
+								result = filterFn(inventory, query, true);
 							}
 							
 							if (angular.isDefined(sortOrder)) {
