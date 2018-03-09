@@ -45,6 +45,13 @@ angular.module('ezim.home')
                     BarcodeScannerSvc.scan()
     					.then(
     					    function happy(result) {
+    					        
+    					        if (result.cancelled) {
+    					            return alerts.push({
+                                        type: 'warning',
+                                        msg: 'Barcode scanning process canceled.'
+                                    });
+    					        }
     					    
         					    return inventoryDatasource.get({'q': {'code': result.text}})
         					        .then(
